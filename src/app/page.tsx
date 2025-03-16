@@ -1,4 +1,4 @@
-import CommandLine from "@/component-library/molecules/commandLine/CommandLine";
+import CommandLine from "@/UI/molecules/commandLine/CommandLine";
 import "./page.css";
 
 const Component = () => {

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import NavMenu from "@/UI/organisms/NavMenu";
 
 export const metadata: Metadata = {
   title: "Unai Fernandez",
@@ -12,9 +13,7 @@ const RootLayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <NavMenu />
   );
 };
 

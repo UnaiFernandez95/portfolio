@@ -1,10 +1,9 @@
-/*TODO: pasar todo a rem los px*/
 .command-line {
   position: relative;
-  width: 700px;
-  height: 296px;
+  width: 70rem;
+  height: 40rem;
   background: #000000;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   display: flex;
   flex-direction: column;
 }
@@ -20,24 +19,24 @@
 
 /* Ellipse Verde */
 .green-ellipse {
-  width: 18px;
-  height: 19px;
+  width: 1.125rem;
+  height: 1.188rem;
   background: #9dbc98;
   border-radius: 50%;
 }
 
 /* Ellipse Amarillo */
 .yellow-ellipse {
-  width: 18px;
-  height: 19px;
+  width: 1.125rem;
+  height: 1.188rem;
   background: #ebd9b4;
   border-radius: 50%;
 }
 
 /* Ellipse rojo */
 .red-ellipse {
-  width: 18px;
-  height: 19px;
+  width: 1.125rem;
+  height: 1.188rem;
   background: #8b2b34;
   border-radius: 50%;
 }
@@ -58,7 +57,7 @@
 .paragraph::after {
   content: "|";
   font-weight: bold;
-  margin-left: 5px;
+  margin-left: 0.313rem;
   opacity: 1;
   animation: blink 1s infinite;
 }
