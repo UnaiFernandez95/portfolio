@@ -4,3 +4,13 @@
   box-sizing: border-box;
   font-family: 'Ubuntu', sans-serif;
 }
+
+.app {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color:  #3B444B;
+  gap: 2rem;
+}

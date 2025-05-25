@@ -1,16 +1,14 @@
 import './App.css'
-import Article from './components/article/Article';
-import Footer from './components/footer/Footer';
-import Header from './components/header/Header'
+import Article from './components/comandLine/CommandLine';
+import Nav from './components/nav/Nav'
 
 function App() {
 
   return (
-    <>
-      <Header />
+    <div className="app">
+      <Nav />
       <Article />
-      <Footer />
-    </>
+    </div>
   );
 }
 
