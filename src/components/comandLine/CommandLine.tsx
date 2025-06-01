@@ -12,7 +12,9 @@ const CommandLine = () => {
           {/* <!-- circle: Ellipse Verde --> */}
           <div className="green-ellipse" />
         </div>
-        <div className="text-area">
+        <div className="text-area" style={{ color: "white" }}>
+          This section is currently under construction. Information will be
+          added soon. Sorry for the trouble :D
         </div>
       </div>
     </>
