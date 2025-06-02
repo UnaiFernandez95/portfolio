@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import profilePhoto from "../assets/profilePhoto.jpg";
 import "./nav.css";
 
 const Nav = () => {
   return (
     <header>
-      <img src="src/assets/profilePhoto.jpg" alt="Unai Fernandez" />
+      <img src={profilePhoto} alt="Unai Fernandez" />
       <nav>
         <ul>
           <li>
