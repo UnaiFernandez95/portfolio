@@ -1,4 +1,4 @@
-import Home from "../Home/Home";
+import Home from "../template/Home/Home";
 import { Route, Routes } from "react-router-dom";
 import About from "../template/about/About";
 import Skills from "../template/skills/Skills";
