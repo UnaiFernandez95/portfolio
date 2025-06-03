@@ -1,9 +1,10 @@
 import Home from "../Home/Home";
-import About from "../About/About";
-import Contact from "../Contact/Contact";
-import Projects from "../Projects/Projects";
 import { Route, Routes } from "react-router-dom";
-import Skills from "../Skills/Skills";
+import About from "../template/about/About";
+import Skills from "../template/skills/Skills";
+import Contact from "../template/contact/Contact";
+import Projects from "../template/projects/Projects";
+
 
 const AppRoutes = () => {
   return (

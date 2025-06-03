@@ -1,4 +1,4 @@
-import CommandLine from "../comandLine/CommandLine";
+import CommandLine from "../../comandLine/CommandLine";
 
 const Projects = () => {
   return (
