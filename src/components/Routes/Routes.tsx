@@ -1,9 +1,9 @@
-import Home from "../template/Home/Home";
+import Home from "../../pages/home/Home";
 import { Route, Routes } from "react-router-dom";
-import About from "../template/about/About";
-import Skills from "../template/skills/Skills";
-import Contact from "../template/contact/Contact";
-import Projects from "../template/projects/Projects";
+import About from "../../pages/about/About";
+import Skills from "../../pages/skills/Skills";
+import Contact from "../../pages/contact/Contact";
+import Projects from "../../pages/projects/Projects";
 
 
 const AppRoutes = () => {

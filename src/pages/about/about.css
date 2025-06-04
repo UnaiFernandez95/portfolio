@@ -1,0 +1,21 @@
+.about-command-line {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #b8b5b5;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #b8b5b5;
+}
+
+p {
+  font-size: 1rem;
+  color: #b8b5b5;
+}

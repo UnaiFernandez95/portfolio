@@ -1,6 +1,12 @@
+import type { ReactNode } from "react";
 import "./commandLine.css";
 
-const CommandLine = () => {
+interface CommandLineProps {
+  children?: ReactNode;
+  className?: string;
+}
+
+const CommandLine= ({ children, className }: CommandLineProps) => {
   return (
     <>
       <div className="command-line">
@@ -12,13 +18,12 @@ const CommandLine = () => {
           {/* <!-- circle: Ellipse Verde --> */}
           <div className="green-ellipse" />
         </div>
-        <div className="text-area" style={{ color: "white" }}>
-          This section is currently under construction. Information will be
-          added soon. Sorry for the trouble :D
+        <div className={className}>
+          {children}
         </div>
       </div>
     </>
   );
-}
+};
 
 export default CommandLine;

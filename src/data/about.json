@@ -1,0 +1,12 @@
+{
+  "ES": {
+    "name": "Unai Fernandez",
+    "title": "Frontend Developer",
+    "description": "Web developer with over three years of experience in software development. Mainly working as a frontend developer at the start-up Lookiero, also handling some backend tasks with Java.  Collaborating with designers to implement user interfaces from Figma designs, and with the backend team to define and consume REST API contracts using JSON."
+  },
+  "EN":{
+    "name": "Unai Fernandez",
+    "title": "Frontend Developer",
+    "description": "Web developer with over three years of experience in software development. Mainly working as a frontend developer at the start-up Lookiero, also handling some backend tasks with Java.  Collaborating with designers to implement user interfaces from Figma designs, and with the backend team to define and consume REST API contracts using JSON."
+  }
+}
