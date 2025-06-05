@@ -9,6 +9,7 @@ const Contact = () => {
         soon.
       </h2>
       <h3>Sorry for the trouble :D</h3>
+      <h3>Feel free to contact me by e-mail: unaifernandez@outlook.com</h3>
     </CommandLine>
   );
 }
