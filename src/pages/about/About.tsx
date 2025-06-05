@@ -8,7 +8,12 @@ const About = () => {
     <CommandLine className="about-command-line">
       <h2>{AboutInfo.EN.title}</h2>
       <h3>{AboutInfo.EN.name}</h3>
-      <p>{AboutInfo.EN.description}</p>
+      <h3>📝 Summary</h3>
+      <p>{AboutInfo.EN.resume}</p>
+      <h3>📖 Story</h3>
+      {AboutInfo.EN.story.map((paragraph: string) => (
+        <p>{paragraph}</p>
+      ))}
     </CommandLine>
   );
 }

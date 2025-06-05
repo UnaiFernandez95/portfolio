@@ -1,12 +1,20 @@
 {
   "ES": {
     "name": "Unai Fernandez",
-    "title": "Frontend Developer",
-    "description": "Web developer with over three years of experience in software development. Mainly working as a frontend developer at the start-up Lookiero, also handling some backend tasks with Java.  Collaborating with designers to implement user interfaces from Figma designs, and with the backend team to define and consume REST API contracts using JSON."
+    "title": "🧑‍💻 Frontend Developer",
+    "resume": "Web developer with over three years of experience in software development. Mainly working as a frontend developer at the start-up Lookiero, also handling some backend tasks with Java.  Collaborating with designers to implement user interfaces from Figma designs, and with the backend team to define and consume REST API contracts using JSON.",
+    "story": ["Mi historia no es muy diferente a la de otros, pero es mía. Siempre me ha encantado la ciencia, así que cuando tenía 18 años decidí estudiar Geología en la universidad. En algún momento del camino descubrí la programación y me di cuenta de que también me gustaba mucho. Hoy en día, la programación es una parte importante de la ciencia, así que no es raro que la haya descubierto estudiando geología.",
+    "Algunas personas dicen que cambié de carrera por completo, pero yo no lo veo así. Después de terminar la universidad, me formé como desarrollador de software. Y actualmente tengo tres años de experiencia trabajando en una startup de Bilbao llamada Lookiero. Sigo aprendiendo y mejorando mis habilidades como desarrollador.",
+    "Me encanta formar parte de un equipo al que le apasiona crear cosas. La verdad, no me importa demasiado qué tecnología usemos para hacer una app. Ojalá tuviera tiempo para probar todos los lenguajes de programación, pero normalmente trabajo con JavaScript (con React) y Python. En internet, la gente discute sobre el lenguaje de programacion que leapasiona como si fueran parte de una secta, así que supongo que los míos serían JavaScript y Python.",
+    "Siempre estoy abierto a escuchar las ideas de los demás, y trato de compartir las mías. En el trabajo soy profesional, pero fuera de eso, soy bastante sociable. Así que no dudes en contactarme, soy una persona abierta y casi siempre tengo una sonrisa en la cara."]
   },
   "EN":{
     "name": "Unai Fernandez",
-    "title": "Frontend Developer",
-    "description": "Web developer with over three years of experience in software development. Mainly working as a frontend developer at the start-up Lookiero, also handling some backend tasks with Java.  Collaborating with designers to implement user interfaces from Figma designs, and with the backend team to define and consume REST API contracts using JSON."
+    "title": "Frontend Developer 🧑‍💻",
+    "resume": "Web developer with over three years of experience in software development. Mainly working as a frontend developer at the start-up Lookiero, also handling some backend tasks with Java.  Collaborating with designers to implement user interfaces from Figma designs, and with the backend team to define and consume REST API contracts using JSON.",
+    "story": ["My story isn't so different from others, but it's mine. I've always loved science, so when I was 18, I decided to study geology at university. Somewhere along the way, I discovered programming and realized I liked that too. These days, programming is a big part of science, so it felt natural to dig into both.", 
+  "Some people say I completely changed careers, but I don't really see it that way. After finishing university, I trained to become a software developer. I've now got three years of experience working at a startup in Bilbao called Lookiero. Right now, I'm still learning and always working to improve my skills as a developer.",
+"I feel like I am more than just a web dev. I really enjoy being part of a team that loves building cool stuff. Honestly, I don't care much about what tech we use to do an application. I wish I had time to try out every programming language, but I mostly stick to JavaScript (with React) and Python. Online, people argue about their favorite languages like it's some kind of cult, so I guess JavaScript and Python are mine.", 
+"I'm always open to other people's ideas, and I try to share mine without stepping on anyone's toes. I keep it professional at work, but outside of that, I'm outgoing. So feel free to contact me. I'm open-minded and always have a smile on my face."]
   }
 }

@@ -18,7 +18,9 @@ const CommandLine= ({ children, className }: CommandLineProps) => {
           {/* <!-- circle: Ellipse Verde --> */}
           <div className="green-ellipse" />
         </div>
-        <div className={className}>
+        <div
+          className={`${className} text-area`}
+        >
           {children}
         </div>
       </div>

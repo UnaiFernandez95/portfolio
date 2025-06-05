@@ -1,0 +1,11 @@
+:root {
+  --dimension-1-2-unit: calc(var(--dimension-unit) / 2); /* 4px */
+  --dimension-unit: 0.5rem; /* 8px */
+  --dimension-2-unit: calc(var(--dimension-unit) * 2); /* 16px */
+  --dimension-3-unit: calc(var(--dimension-unit) * 3); /* 24px */
+  --dimension-4-unit: calc(var(--dimension-unit) * 4); /* 32px */
+  --dimension-5-unit: calc(var(--dimension-unit) * 5); /* 40px */
+  --dimension-6-unit: calc(var(--dimension-unit) * 6); /* 48px */
+  --dimension-8-unit: calc(var(--dimension-unit) * 8); /* 64px */
+}
+
