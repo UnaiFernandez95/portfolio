@@ -1,62 +1,78 @@
 {
   "ES": {
-    "projects": [
+    "projects":[
       {
-        "title": "Portfolio Website",
-        "description": "A personal portfolio website built with React and TailwindCSS.",
+        "title": "Portafolio Website",
+        "description": "A personal portfolio website built with React.",
         "technologies": [
           "React",
-          "React Native",
+          "react-router-dom",
           "Vite",
-          "Node.js",
-          "storybook"
+          "Node.js"
         ],
-        "link": "https://yourportfolio.com"
+        "link": "https://www.unaifernandez.tech"
       },
       {
-        "title": "Portfolio Website",
-        "description": "A personal portfolio website built with React and TailwindCSS.",
+        "title": "Lookiero Tech",
+        "description": [
+          "Worked with technologies like React.",
+          "Created Storybook workshops for shared components across various applications in the UI.",
+          "Built applications with a hexagonal architecture on the front end.",
+          "Implemented unit and UI testing using Jest and Testing Library"
+        ],
         "technologies": [
+          "Storybook",
           "React",
           "React Native",
-          "Vite",
+          "react-router-dom",
+          "webpack",
           "Node.js",
-          "storybook"
+          "jest",
+          "testing-library"
         ],
-        "link": "https://yourportfolio.com",
+        "link": "https://www.lookiero.com",
         "company": "Lookiero Tech",
         "role": "Frontend Developer",
         "period": "2021 - 2024"
-      }]
+      }
+    ]
   },
   "EN": {
     "projects": [
       {
-        "title": "Portfolio Website",
-        "description": "A personal portfolio website built with React and TailwindCSS.",
+        "title": "Portafolio Website",
+        "description": "A personal portfolio website built with React.",
         "technologies": [
           "React",
-          "React Native",
+          "react-router-dom",
           "Vite",
-          "Node.js",
-          "storybook"
+          "Node.js"
         ],
-        "link": "https://yourportfolio.com"
+        "link": "https://www.unaifernandez.tech"
       },
       {
-        "title": "Portfolio Website",
-        "description": "A personal portfolio website built with React and TailwindCSS.",
+        "title": "Lookiero Tech",
+        "description": [
+          "Worked with technologies like React.",
+          "Created Storybook workshops for shared components across various applications in the UI.",
+          "Built applications with a hexagonal architecture on the front end.",
+          "Implemented unit and UI testing using Jest and Testing Library"
+        ],
         "technologies": [
+          "Storybook",
           "React",
           "React Native",
-          "Vite",
+          "react-router-dom",
+          "webpack",
           "Node.js",
-          "storybook"
+          "jest",
+          "testing-library"
         ],
-        "link": "https://yourportfolio.com",
+        "link": "https://www.lookiero.com",
         "company": "Lookiero Tech",
         "role": "Frontend Developer",
         "period": "2021 - 2024"
-      }]
+      }
+    ]
   }
 }

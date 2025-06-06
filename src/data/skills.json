@@ -1,4 +1,67 @@
 {
-  "ES": {},
-  "EN": {}
+  "ES": {"frontend": [
+      "Html",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Node.js",
+      "REST APIs"
+    ],
+    "backend": [
+      "Python",
+      "FastAPI"
+    ],
+    "databases": [
+      "PostgreSQL"
+    ],
+    "tools": [
+      "Git",
+      "CI/CD"
+    ],
+    "testing": [
+      "Jest"
+    ],
+    "other": [
+      "Agile methodologies",
+      "Scrum"
+    ],
+    "OS": [
+      "Linux"
+    ]
+  },
+  "EN": {"frontend": [
+      "Html",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "React native",
+      "Next.js",
+      "Node.js",
+      "REST APIs"
+    ],
+    "backend": [
+      "Python",
+      "FastAPI"
+    ],
+    "databases": [
+      "PostgreSQL"
+    ],
+    "tools": [
+      "Git",
+      "CI/CD"
+    ],
+    "testing": [
+      "Jest"
+    ],
+    "other": [
+      "Agile methodologies",
+      "Scrum"
+    ],
+    "OS": [
+      "Linux"
+    ]
+        }
 }
