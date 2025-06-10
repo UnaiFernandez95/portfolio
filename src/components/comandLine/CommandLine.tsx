@@ -11,17 +11,17 @@ const CommandLine= ({ children, className }: CommandLineProps) => {
     <>
       <div className="command-line">
         <div className="color-buttons">
-          {/* <!-- circle: Ellipse rojo --> */}
+          {/* <!-- circle: Red--> */}
           <div className="red-ellipse" />
-          {/* <!-- circle: Ellipse Amarillo --> */}
+          {/* <!-- circle: Yellow --> */}
           <div className="yellow-ellipse" />
-          {/* <!-- circle: Ellipse Verde --> */}
+          {/* <!-- circle: Green --> */}
           <div className="green-ellipse" />
         </div>
         <div
           className={`${className} text-area`}
         >
-          {children}
+          {children ? children : <h2>Sorry, something is wrong.</h2>}
         </div>
       </div>
     </>

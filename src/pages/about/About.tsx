@@ -1,6 +1,6 @@
-import AboutInfo from "../../data/about.json";
-import CommandLine from "../../components/comandLine/CommandLine";
 
+import CommandLine from "../../components/comandLine/CommandLine";
+import AboutInfo from "../../data/about.json";
 import "./about.css";
 
 const About = () => {
