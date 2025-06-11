@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import profilePhoto from "../../assets/profilePhoto.jpg";
+import resumePdf from "../../assets/Developer-Unai-resume.pdf";
+import Button from "../button/Button";
 import "./nav.css";
 
 const Nav = () => {
@@ -30,6 +32,11 @@ const Nav = () => {
           </li>
         </ul>
       </nav>
+      <a className="link" href={resumePdf} download>
+        <Button>  
+            CV / resume
+        </Button>
+      </a>
     </header>
   );
 };
