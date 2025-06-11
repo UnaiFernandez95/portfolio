@@ -7,7 +7,7 @@ interface ButtonProps {
 }
 
 const Button = ({ children, string = "button", disabled}: ButtonProps) => {
-  return <button disabled={!disabled}>{children || string}</button>;
+  return <button disabled={disabled}>{children || string}</button>;
 };
 
 export default Button;
