@@ -1,7 +1,7 @@
-import './App.css'
 import Nav from './components/nav/Nav'
 import AppRoutes from './components/Routes/Routes';
 import "./styles/color.css"
+import './App.css'
 
 function App() {
 

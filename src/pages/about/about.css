@@ -2,17 +2,24 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  color: var(--color-text)
+  color: var(--color-text);
 }
 
-h2 {
-  font-size: 2rem;
+.type-line {
+  margin-bottom: 0.4rem;
 }
 
-h3 {
-  font-size: 1.5rem;
+.cursor {
+  display: inline-block;
+  animation: blink 1s steps(2, start) infinite;
+  color: #00ff88;
 }
 
-p {
-  font-size: 1rem;
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }

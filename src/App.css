@@ -1,8 +1,16 @@
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('/fonts/CascadiaCode.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Cascadia Code', monospace;
+
 }
 
 .app {
@@ -13,6 +21,28 @@
   min-height: 100vh;
   background-color:  var(--color-background);
   gap: 1rem;
+}
+h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+h2{
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+h3{
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+p{
+  font-size: 1.25rem;
+  color: var(--color-text);
 }
 
 @media (max-width: 768px) {
