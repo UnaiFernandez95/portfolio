@@ -3,7 +3,7 @@
   position: relative;
   width: 60rem;
   height: 35rem;
-  background: #000000;
+  background: var(--color-command-line-background);
   border-radius: 0.625rem;
   font-family: 'Courier New', Courier, monospace;
 }
@@ -17,27 +17,27 @@
   gap: 0.75rem;
 }
 
-/* Ellipse Red */
+/* Ellipse red */
 .red-ellipse {
   width: 18px;
   height: 19px;
-  background: #8B2B34;
+  background: var(--color-red);
   border-radius: 50%;
 }
 
-/* Ellipse Yellow */
+/* Ellipse beige */
 .yellow-ellipse {
   width: 18px;
   height: 19px;
-  background: #d0b69c;
+  background: var(--color-beige);
   border-radius: 50%;
 }
 
-/* Ellipse Green */
+/* Ellipse green */
 .green-ellipse {
   width: 18px;
   height: 19px;
-  background: #737b4a;
+  background: var(--color-green);
   border-radius: 50%;
 }
 

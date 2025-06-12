@@ -1,14 +1,14 @@
 button {
   width: 164px;
   height: 37px;
-  background: #d0b69c;
-  border-radius: 0.625rem;
+  color:  var( --color-command-line-background);
+  background: var(--color-button);
   border: none;
-  color:  #737b4a;
+  border-radius: 0.625rem;
   cursor: pointer;
 }
 
 button:hover {
-  background: #737b4a;
-  color: #d0b69c;
+  color: var(--color-beige);
+  background: var(--color-green);
 }

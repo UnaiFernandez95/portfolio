@@ -36,7 +36,7 @@ const Contact = () => {
             <label className="fs-label" htmlFor="number">
               Phone Number:
             </label>
-            <input className="fs-input" id="number" name="number" required />
+            <input className="fs-input" id="number" name="number" />
             <ValidationError
               prefix="Number"
               field="number"

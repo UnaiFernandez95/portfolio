@@ -1,16 +1,10 @@
-/*TODO: make unique rules for css for all page */
 
 :root{
-  --color-primary: #3498db;
-  --color-secondary: #2ecc71;
-  --color-accent: #e74c3c;
-  --color-background: #ecf0f1;
-  --color-text: #2c3e50;
-  --color-border: #bdc3c7;
-
-  /* Additional colors */
-  --color-success: #27ae60;
-  --color-warning: #f39c12;
-  --color-error: #c0392b;
-  --color-info: #8e44ad;
+  --color-green: #737b4a;
+  --color-beige: #d0b69c;
+  --color-red: #8B2B34;
+  --color-background: #3B444B;
+  --color-command-line-background: #000000;
+  --color-text: #c7c7c7;
+  --color-button: #9b9b9b;
 }

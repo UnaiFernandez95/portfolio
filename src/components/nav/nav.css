@@ -27,7 +27,7 @@ nav ul li {
 
 nav ul li .link {
   text-decoration: none;
-  color: #dac9b2;
+  color: var(--color-text);
   font-weight: bold;
 }
 

@@ -7,13 +7,15 @@ This is my personal portfolio website, built with **React** and **Vite**. It sho
 - [React](https://reactjs.org/) – JavaScript library for building user interfaces
 - [Vite](https://vitejs.dev/) – Fast and modern frontend build tool
 - [React Router](https://reactrouter.com/) – Declarative routing for React
-- [EmailJS / Formspree](https://formspree.io/) *(optional)* – For contact form integration
+- [EmailJS / Formspree](https://formspree.io/) – For contact form integration
 
 ## 📸 Features
 
-- Smooth page transitions and animations
-- Downloadable resume/CV
-- Contact form for inquiries
+📄 Downloadable Resume – Easily access and download a polished PDF version of my latest CV.
+
+✉️ Contact Form – Get in touch directly through a built-in form for  collaborations, or questions.
+
+🛠️ Tech Stack & Skills Overview – Browse through the key technologies I use and my core frontend development skills.
 
 ## 🛠️ Installation
 
