@@ -9,7 +9,12 @@ import Button from "../../components/button/Button";
 const Contact = () => {
   const [state, handleSubmit] = useForm("mgvyaron");
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return (
+      <CommandLine className="contact-command-line">
+        <h2>Feel free to connect with me 🙋‍♂️</h2>
+        <p>Thanks for contacting me!</p>
+      </CommandLine>
+    );
   }
   return (
     <CommandLine className="contact-command-line">

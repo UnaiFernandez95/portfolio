@@ -31,37 +31,112 @@
       "Linux"
     ]
   },
-  "EN": {"frontend": [
-      "Html",
-      "CSS",
-      "JavaScript",
-      "TypeScript",
-      "React",
-      "React native",
-      "Next.js",
-      "Node.js",
-      "REST APIs"
-    ],
-    "backend": [
-      "Python",
-      "FastAPI"
-    ],
-    "databases": [
-      "PostgreSQL"
-    ],
-    "tools": [
-      "Git",
-      "CI/CD"
-    ],
-    "testing": [
-      "Jest"
-    ],
-    "other": [
-      "Agile methodologies",
-      "Scrum"
-    ],
-    "OS": [
-      "Linux"
-    ]
+  "EN": {
+    "frontend": {
+      "title": "Frontend",
+      "description": "I have a strong foundation in frontend development, with a focus on creating responsive and user-friendly web applications. I am proficient in modern JavaScript frameworks and libraries, and I enjoy building interactive user interfaces.",
+      "technologies": [
+        {
+          "name": "Html",
+          "icon": "html"
+        },
+        {
+          "name": "CSS",
+          "icon": "css"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "javascript"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "typescript"
+        },
+        {
+          "name": "React",
+          "icon": "react"
+        },
+        {
+          "name": "React native",
+          "icon": "reactnative"
+        },
+        {
+          "name": "Next.js",
+          "icon": "nextjs"
+        },
+        {
+          "name": "Node.js",
+          "icon": "node"
+        },
+        {
+          "name": "REST APIs",
+          "icon": "restapi"
         }
+      ]
+    },
+    "backend": {
+      "title": "Backend",
+      "description": "I have a solid understanding of backend development, with experience in building RESTful APIs and working with databases. I am skilled in Python and FastAPI, and I enjoy creating efficient and scalable server-side applications.",
+      "technologies": [
+        {
+          "name": "Python",
+          "icon": "python"
+        },
+        {
+          "name": "FastAPI",
+          "icon": "fastapi"
+        }
+      ],
+      "databases": {
+        "title": "Databases",
+        "description": "I have experience working with PostgreSQL, a powerful and reliable relational database management system. I am comfortable writing complex queries and optimizing database performance.",
+        "technologies": [
+          {
+            "name": "PostgreSQL",
+            "icon": "postgresql"
+          }
+        ]
+      },
+      "tools": {
+        "title": "Tools",
+        "technologies": [
+          {
+            "name": "Git",
+            "icon": "git"
+          },
+          {
+            "name": "CI/CD",
+            "icon": "ci-cd"
+          }
+        ]
+      },
+      "testing": {
+        "title": "Testing",
+        "technologies": [
+          {
+            "name": "Jest",
+            "icon": "jest"
+          }
+        ]
+      },
+      "other": {
+        "title": "Other",
+        "technologies": [
+          {
+            "name": "Agile methodologies",
+            "icon": "agile"
+          },
+          {
+            "name": "Scrum",
+            "icon": "scrum"
+          }
+        ]
+      },
+      "OS": {
+        "title": "Operating Systems",
+        "description": "I'm really into Linux. My personal computer runs on Linux mint, and I have experience with Ubuntu. I also have some experience with Windows, but I prefer Linux for development and personal use.",
+        "technologies": []
+      }
+    }
+  }
 }

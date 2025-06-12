@@ -1,4 +1,5 @@
 import CommandLine from "../../components/comandLine/CommandLine";
+
 import "./projects.css";
 
 const Projects = () => {

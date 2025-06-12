@@ -1,11 +1,17 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import CommandLine from "../../components/comandLine/CommandLine";
 import { useNavigate } from "react-router-dom";
 import "./home.css";
 
 const Home = () => {
   const [command, setCommand] = useState("");
+
+  const inputRef = useRef<HTMLInputElement>(null);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    inputRef.current?.focus(); 
+  }, []);
 
   const handleCommand = (navigateCommand: React.FormEvent) => {
     navigateCommand.preventDefault();
@@ -34,16 +40,16 @@ const Home = () => {
     setCommand("");
   };
   return (
-    <CommandLine>
+    <CommandLine className="home-command-line">
       <h1>I'm Unai Fernandez</h1>
       <h2>Welcome to my portfolio website.</h2>
       <p>
-        Enter a command above such as 'about me', 'skills', 'projects', or
-        'contact' to explore more about me.
+        Enter a command below, such as 'about me', 'skills', 'projects', or 'contact', to explore more about me.
       </p>
       <form onSubmit={handleCommand} className="command-form">
         <p>{"user ➜ ~ cd ./"} </p>
         <input
+          ref={inputRef}
           type="text"
           value={command}
           maxLength={10}

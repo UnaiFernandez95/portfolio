@@ -17,3 +17,23 @@ h3 {
 p {
   font-size: 1rem;
 }
+.skills-command-line ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+  gap: 16px; /* espacio entre filas y columnas */
+  list-style: none; /* opcional: quita los puntos */
+  padding: 0;
+  margin: 0;
+}
+
+.skills-command-line ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* espacio entre icono y texto */
+}
+
+.skills-command-line img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
