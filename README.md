@@ -36,7 +36,7 @@ npm run dev
 ```
 data/               # Json with web the information ES/EN
 src/
-├── assets/         # Images and media
+├── assets/         # Images and Resume Pdf
 ├── components/     # Reusable UI components
 ├── pages/          # Main page components (Home, About, Projects, etc.)
 ├── styles/         # Global CSS or Tailwind config

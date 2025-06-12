@@ -4,7 +4,7 @@
   width: 60rem;
   height: 35rem;
   background: #000000;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   font-family: 'Courier New', Courier, monospace;
 }
 
@@ -47,4 +47,12 @@
   height: 31.5rem;
   overflow: auto;
 }
+
+/* ------- scroll ------- */
+
+* {
+  scrollbar-width:auto; 
+  scrollbar-color: #888 #000000;
+}
+
 
