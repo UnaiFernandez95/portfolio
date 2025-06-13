@@ -1,4 +1,5 @@
 import CommandLine from "../../components/comandLine/CommandLine";
+import CommandLineInputNav from "../../components/commandLineInputNav/CommandLineInputNav";
 
 import "./projects.css";
 
@@ -10,6 +11,7 @@ const Projects = () => {
         soon.
       </h2>
       <h3>Sorry for the trouble :D</h3>
+      <CommandLineInputNav isAutofocus={true} />
     </CommandLine>
   );
 }

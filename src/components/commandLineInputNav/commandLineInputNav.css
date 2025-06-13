@@ -1,0 +1,20 @@
+.command-form .command-input{
+  display: flex;
+  flex-direction: row;
+}
+.command-separator{
+  margin-bottom: 1rem;
+  border-top: 2px solid #ccc;
+}
+.command-form .command-input p {
+ color: rgb(12, 155, 8);
+}
+.input-command {
+  background:transparent;
+  border: none;
+  outline: none;
+  color: transparent;
+  caret-color: white;
+  font-size: 1rem;
+  color:#b8b5b5
+}

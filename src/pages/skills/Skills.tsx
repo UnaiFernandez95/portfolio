@@ -12,6 +12,7 @@ import reactIcon from "./../../assets/icons/react.svg";
 import reactNativeIcon from "./../../assets/icons/reactnative.svg";
 import restApiIcon from "./../../assets/icons/restapi.svg";
 import typescriptIcon from "./../../assets/icons/typescript.svg";
+import CommandLineInputNav from "../../components/commandLineInputNav/CommandLineInputNav";
 
 const ICON_MAP: Record<string, string> = {
   css: cssIcon,
@@ -46,6 +47,7 @@ const Skills = () => {
           );
         })}
       </ul>
+      <CommandLineInputNav isAutofocus={true} />
     </CommandLine>
   );
 };

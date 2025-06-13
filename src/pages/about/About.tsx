@@ -1,4 +1,6 @@
+import { useState } from "react";
 import CommandLine from "../../components/comandLine/CommandLine";
+import CommandLineInputNav from "../../components/commandLineInputNav/CommandLineInputNav";
 import TypingText from "../../components/typingText/TypingText";
 import AboutInfo from "../../data/about.json";
 import "./about.css";
@@ -13,11 +15,16 @@ const About = () => {
     ...AboutInfo.EN.story.map((paragraph) => `${paragraph}`),
   ];
 
+  const [showMessage, setShowMessage] = useState(false);
   return (
     <CommandLine className="about-command-line">
       <h1>{`> ${AboutInfo.EN.name}`}</h1>
       <h2>{`→ ${AboutInfo.EN.title}`}</h2>
-      <TypingText lines={contentLines} />
+      <TypingText
+        lines={contentLines}
+        onTypingFinished={() => setShowMessage(true)}
+      />
+      <CommandLineInputNav showMessage={showMessage} isAutofocus={true} />
     </CommandLine>
   );
 };

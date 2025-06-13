@@ -1,7 +1,8 @@
 import { useForm, ValidationError } from "@formspree/react";
 import CommandLine from "../../components/comandLine/CommandLine";
-import "./contact.css";
 import Button from "../../components/button/Button";
+import CommandLineInputNav from "../../components/commandLineInputNav/CommandLineInputNav";
+import "./contact.css";
 
 //TODO: improve CommandLine styles 
 //TODO: add form validation
@@ -13,6 +14,7 @@ const Contact = () => {
       <CommandLine className="contact-command-line">
         <h2>Feel free to connect with me 🙋‍♂️</h2>
         <p>Thanks for contacting me!</p>
+        <CommandLineInputNav />
       </CommandLine>
     );
   }
@@ -20,7 +22,7 @@ const Contact = () => {
     <CommandLine className="contact-command-line">
       <h2>Feel free to connect with me 🙋‍♂️</h2>
 
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="contact-command-line-form">
         <div className="esential-info">
           {/* <!-- Name --> */}
           <div className="form-name">
@@ -59,10 +61,9 @@ const Contact = () => {
           errors={state.errors}
         />
 
-        <Button disabled={state.submitting}>
-          Submit
-        </Button>
+        <Button disabled={state.submitting}>Submit</Button>
       </form>
+      <CommandLineInputNav />
     </CommandLine>
   );
 }
