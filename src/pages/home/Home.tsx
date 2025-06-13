@@ -9,18 +9,19 @@ const Home = () => {
   const inputRef = useRef<HTMLInputElement>(null);
   const navigate = useNavigate();
 
-  // Auto-focus on input when page loads
-  useEffect(() => {
-    inputRef.current?.focus();
-  }, []);
-
+  
   const contentLines = [
     "I'm Unai Fernandez",
     "Welcome to my portfolio website.",
     "Enter a command below, such as 'about me', 'skills', 'projects', or 'contact', to explore more about me.",
-    "user ➜ ~ cd ./",
   ];
-
+  
+  const [showMessage, setShowMessage] = useState(false);
+  
+  // Auto-focus on input when page loads
+  useEffect(() => {
+    showMessage && inputRef.current?.focus();
+  }, [showMessage]);
   //form 
   const handleCommand = (navigateCommand: React.FormEvent) => {
     navigateCommand.preventDefault();
@@ -50,9 +51,9 @@ const Home = () => {
 
   return (
     <CommandLine className="home-command-line">
-      <TypingText lines={contentLines} />
-
+      <TypingText lines={contentLines} onTypingFinished={() => setShowMessage(true)} />
       <form onSubmit={handleCommand} className="command-form">
+        <div>{showMessage && <p>user ➜ ~ cd ./</p>}</div>
         <input
           ref={inputRef}
           type="text"

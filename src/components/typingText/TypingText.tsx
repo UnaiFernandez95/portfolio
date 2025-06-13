@@ -4,9 +4,14 @@ import "./typingText.css";
 interface TypingTextProps {
   lines: string[];
   className?: string;
+  onTypingFinished?: () => void;
 }
 
-const TypingText = ({ lines, className = "typing-text" }: TypingTextProps) => {
+const TypingText = ({
+  lines,
+  className = "typing-text",
+  onTypingFinished,
+}: TypingTextProps) => {
   const [currentLine, setCurrentLine] = useState(0);
   const [typedText, setTypedText] = useState("");
   const [displayedLines, setDisplayedLines] = useState<string[]>([]);
@@ -34,8 +39,14 @@ const TypingText = ({ lines, className = "typing-text" }: TypingTextProps) => {
       }
     }, 10);
 
-    return () => clearInterval(interval);
+    return () =>{ clearInterval(interval)}
   }, [charIndex, currentLine, isTyping, lines]);
+
+  useEffect(() => {
+    if (currentLine >= lines.length && onTypingFinished) {
+      onTypingFinished();
+    }
+  }, [currentLine, lines.length, onTypingFinished]);
 
   return (
     <div className={className}>
