@@ -20,7 +20,7 @@
 }
 
 .home-command-line .command-form p {
- color: rgb(12, 155, 8);
+ color: var(--color-green);
 }
 .home-command-line .input-command {
   background:transparent;

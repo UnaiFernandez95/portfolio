@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import profilePhoto from "../../assets/profilePhoto.jpg";
-import resumePdf from "../../assets/Developer-Unai-resume.pdf";
-import Button from "../button/Button";
+import profilePhoto from "../../../assets/profilePhoto.jpg";
+import resumePdf from "../../../assets/Developer-Unai-resume.pdf";
 import "./nav.css";
+import Button from "../../atoms/button/Button";
 
 const Nav = () => {
   return (

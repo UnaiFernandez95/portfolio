@@ -7,7 +7,7 @@
   border-top: 2px solid #ccc;
 }
 .command-form .command-input p {
- color: rgb(12, 155, 8);
+ color: var(--color-green);
 }
 .input-command {
   background:transparent;

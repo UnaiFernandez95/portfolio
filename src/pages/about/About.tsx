@@ -1,7 +1,7 @@
 import { useState } from "react";
-import CommandLine from "../../components/comandLine/CommandLine";
-import CommandLineInputNav from "../../components/commandLineInputNav/CommandLineInputNav";
-import TypingText from "../../components/typingText/TypingText";
+import CommandLine from "../../components/organisms/comandLine/CommandLine";
+import CommandLineInputNav from "../../components/molecules/commandLineInputNav/CommandLineInputNav";
+import TypingText from "../../components/molecules/typingText/TypingText";
 import AboutInfo from "../../data/about.json";
 import "./about.css";
 
@@ -16,6 +16,7 @@ const About = () => {
   ];
 
   const [showMessage, setShowMessage] = useState(false);
+  
   return (
     <CommandLine className="about-command-line">
       <h1>{`> ${AboutInfo.EN.name}`}</h1>
@@ -24,7 +25,7 @@ const About = () => {
         lines={contentLines}
         onTypingFinished={() => setShowMessage(true)}
       />
-      <CommandLineInputNav showMessage={showMessage} isAutofocus={true} />
+      <CommandLineInputNav showMessage={showMessage} isAutofocus={false} />
     </CommandLine>
   );
 };

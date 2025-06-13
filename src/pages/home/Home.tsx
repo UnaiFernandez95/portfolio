@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
-import CommandLine from "../../components/comandLine/CommandLine";
+import CommandLine from "../../components/organisms/comandLine/CommandLine";
 import { useNavigate } from "react-router-dom";
 import "./home.css";
-import TypingText from "../../components/typingText/TypingText";
+import TypingText from "../../components/molecules/typingText/TypingText";
 
 const Home = () => {
   const [command, setCommand] = useState("");

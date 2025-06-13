@@ -1,4 +1,4 @@
-import CommandLine from "../../components/comandLine/CommandLine";
+import CommandLine from "../../components/organisms/comandLine/CommandLine";
 import SkillsInfo from "../../data/skills.json";
 import "./skills.css";
 
@@ -12,7 +12,7 @@ import reactIcon from "./../../assets/icons/react.svg";
 import reactNativeIcon from "./../../assets/icons/reactnative.svg";
 import restApiIcon from "./../../assets/icons/restapi.svg";
 import typescriptIcon from "./../../assets/icons/typescript.svg";
-import CommandLineInputNav from "../../components/commandLineInputNav/CommandLineInputNav";
+import CommandLineInputNav from "../../components/molecules/commandLineInputNav/CommandLineInputNav";
 
 const ICON_MAP: Record<string, string> = {
   css: cssIcon,

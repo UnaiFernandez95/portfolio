@@ -1,7 +1,7 @@
 import { useForm, ValidationError } from "@formspree/react";
-import CommandLine from "../../components/comandLine/CommandLine";
-import Button from "../../components/button/Button";
-import CommandLineInputNav from "../../components/commandLineInputNav/CommandLineInputNav";
+import CommandLine from "../../components/organisms/comandLine/CommandLine";
+import Button from "../../components/atoms/button/Button";
+import CommandLineInputNav from "../../components/molecules/commandLineInputNav/CommandLineInputNav";
 import "./contact.css";
 
 //TODO: improve CommandLine styles 

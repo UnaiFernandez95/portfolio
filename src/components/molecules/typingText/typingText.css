@@ -12,7 +12,7 @@
 
 .cursor {
   display: inline-block;
-  animation: blink 1s steps(2, start) infinite;
+  animation: blink 1s steps(1, start) infinite;
   color: var(--color-green);
 }
 

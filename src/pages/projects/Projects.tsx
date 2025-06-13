@@ -1,5 +1,5 @@
-import CommandLine from "../../components/comandLine/CommandLine";
-import CommandLineInputNav from "../../components/commandLineInputNav/CommandLineInputNav";
+import CommandLine from "../../components/organisms/comandLine/CommandLine";
+import CommandLineInputNav from "../../components/molecules/commandLineInputNav/CommandLineInputNav";
 
 import "./projects.css";
 
