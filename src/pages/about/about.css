@@ -5,21 +5,3 @@
   color: var(--color-text);
 }
 
-.type-line {
-  margin-bottom: 0.4rem;
-}
-
-.cursor {
-  display: inline-block;
-  animation: blink 1s steps(2, start) infinite;
-  color: #00ff88;
-}
-
-@keyframes blink {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}

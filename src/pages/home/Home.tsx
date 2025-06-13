@@ -2,11 +2,17 @@ import { useEffect, useRef, useState } from "react";
 import CommandLine from "../../components/comandLine/CommandLine";
 import { useNavigate } from "react-router-dom";
 import "./home.css";
+import TypingText from "../../components/typingText/TypingText";
 
 const Home = () => {
   const [command, setCommand] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
   const navigate = useNavigate();
+
+  // Auto-focus on input when page loads
+  useEffect(() => {
+    inputRef.current?.focus();
+  }, []);
 
   const contentLines = [
     "I'm Unai Fernandez",
@@ -15,37 +21,7 @@ const Home = () => {
     "user ➜ ~ cd ./",
   ];
 
-  const [currentLine, setCurrentLine] = useState(0);
-  const [typedText, setTypedText] = useState("");
-  const [displayedLines, setDisplayedLines] = useState<string[]>([]);
-  const [charIndex, setCharIndex] = useState(0);
-
-  // Auto-focus on input when page loads
-  useEffect(() => {
-    inputRef.current?.focus();
-  }, []);
-
-  // Typing effect logic
-  useEffect(() => {
-    if (currentLine >= contentLines.length) return;
-
-    const line = contentLines[currentLine];
-    const interval = setInterval(() => {
-      if (charIndex < line.length) {
-        setTypedText((prev) => prev + line[charIndex]);
-        setCharIndex((prev) => prev + 1);
-      } else {
-        clearInterval(interval);
-        setDisplayedLines((prev) => [...prev, line]);
-        setTypedText("");
-        setCharIndex(0);
-        setTimeout(() => setCurrentLine((prev) => prev + 1), 300);
-      }
-    }, 30);
-
-    return () => clearInterval(interval);
-  }, [charIndex, currentLine]);
-
+  //form 
   const handleCommand = (navigateCommand: React.FormEvent) => {
     navigateCommand.preventDefault();
     const input = command.trim().toLowerCase();
@@ -74,17 +50,7 @@ const Home = () => {
 
   return (
     <CommandLine className="home-command-line">
-      {displayedLines.map((line, idx) => (
-        <p key={idx} className="type-line">
-          {line}
-        </p>
-      ))}
-      {currentLine < contentLines.length && (
-        <p className="type-line">
-          {typedText}
-          <span className="cursor">█</span>
-        </p>
-      )}
+      <TypingText lines={contentLines} />
 
       <form onSubmit={handleCommand} className="command-form">
         <input
