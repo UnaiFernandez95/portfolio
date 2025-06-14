@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import profilePhoto from "../../../assets/profilePhoto.jpg";
+import profilePhoto from "../../../assets/profilePhoto.png";
 import resumePdf from "../../../assets/Developer-Unai-resume.pdf";
 import "./nav.css";
 import Button from "../../atoms/button/Button";
