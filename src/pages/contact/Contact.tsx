@@ -3,6 +3,7 @@ import CommandLine from "../../components/organisms/comandLine/CommandLine";
 import Button from "../../components/atoms/button/Button";
 import CommandLineInputNav from "../../components/molecules/commandLineInputNav/CommandLineInputNav";
 import "./contact.css";
+import Input from "../../components/atoms/input/Input";
 
 //TODO: improve CommandLine styles 
 //TODO: add form validation
@@ -26,19 +27,13 @@ const Contact = () => {
         <div className="esential-info">
           {/* <!-- Name --> */}
           <div className="form-name">
-            <label className="fs-label" htmlFor="name">
-              Name:
-            </label>
-            <input className="fs-input" id="name" name="name" required />
+            <Input id="name" name="name" label="Name:"  maxLength={50} required />
             <ValidationError prefix="Name" field="name" errors={state.errors} />
           </div>
 
           {/* <!-- Phone Number --> */}
           <div className="form-phone">
-            <label className="fs-label" htmlFor="number">
-              Phone Number:
-            </label>
-            <input className="fs-input" id="number" name="number" />
+            <Input id="number" name="number" label="Phone Number:"  maxLength={13} />
             <ValidationError
               prefix="Number"
               field="number"
@@ -48,8 +43,7 @@ const Contact = () => {
         </div>
 
         {/* <!-- Email --> */}
-        <label htmlFor="email">Email Address:</label>
-        <input id="email" type="email" name="email" required />
+        <Input id="email" type="email" name="email" label="Email address: " maxLength={50} required />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
 
         {/* <!-- Message --> */}

@@ -43,18 +43,18 @@ const CommandLineInputNav = ({ showMessage = true, isAutofocus = false }: Comman
     setCommand("");
   };
   return (
-    <form onSubmit={handleCommand} className="command-form">
+    <form onSubmit={handleCommand} className="command-line-form">
       {showMessage ? (
         <>
-          <hr className="command-separator" />
+          <hr className="command-line-form-separator" />
           <p>
-            {"-> "}Enter a command below, such as 'about me', 'skills', 'projects', or
-            'contact', to explore more about me.
+            {"-> "}Enter a command below, such as 'about me', 'skills',
+            'projects', or 'contact', to explore more about me.
           </p>
         </>
       ) : null}
       {showMessage ? (
-        <div className="command-input">
+        <div className="command-line-form-command-input">
           <p>user ➜ ~ cd ./</p>
           <input
             ref={inputRef}

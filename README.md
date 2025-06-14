@@ -7,7 +7,7 @@ This is my personal portfolio website, built with **React** and **Vite**. It sho
 - [React](https://reactjs.org/) – JavaScript library for building user interfaces
 - [Vite](https://vitejs.dev/) – Fast and modern frontend build tool
 - [React Router](https://reactrouter.com/) – Declarative routing for React
-- [EmailJS / Formspree](https://formspree.io/) – For contact form integration
+- [EmailJS / Formspree](https://formspree.io/) – For contact form integration 
 
 ## 📸 Features
 
@@ -36,12 +36,15 @@ npm run dev
 ## 📁 Project Structure
 
 ```
-data/               # Json with web the information ES/EN
 src/
 ├── assets/         # Images and Resume Pdf
-├── components/     # Reusable UI components
+├── components/     # Reusable UI components (atomic design)
+    ├- atoms/
+    ├- molecules/
+    ├- organisms/
+├── data/           # Json with web the information ES/EN     
 ├── pages/          # Main page components (Home, About, Projects, etc.)
-├── styles/         # Global CSS or Tailwind config
+├── styles/         # Global CSS
 ├── App.jsx
 └── main.jsx
 ```

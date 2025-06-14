@@ -3,14 +3,14 @@ import "./typingText.css";
 
 interface TypingTextProps {
   lines: string[];
-  className?: string;
   onTypingFinished?: () => void;
+  time?: number;
 }
 
 const TypingText = ({
   lines,
-  className = "typing-text",
   onTypingFinished,
+  time = 100,
 }: TypingTextProps) => {
   const [currentLine, setCurrentLine] = useState(0);
   const [typedText, setTypedText] = useState("");
@@ -35,7 +35,7 @@ const TypingText = ({
           setCharIndex(0);
           setCurrentLine((prev) => prev + 1);
           setIsTyping(true);
-        }, 100);
+        }, time);
       }
     }, 10);
 
@@ -49,7 +49,7 @@ const TypingText = ({
   }, [currentLine, lines.length, onTypingFinished]);
 
   return (
-    <div className={className}>
+    <div className={"typing-text"}>
       {displayedLines.map((line, idx) => (
         <p key={idx} className="type-line">
           {line}

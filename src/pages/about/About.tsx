@@ -10,7 +10,7 @@ const About = () => {
     "-----------------------------------------------------",
     "📝 Summary",
     `${AboutInfo.EN.resume}`,
-    "-----------------------------------------------------",
+    "-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --",
     "📖 Story",
     ...AboutInfo.EN.story.map((paragraph) => `${paragraph}`),
   ];
@@ -24,6 +24,7 @@ const About = () => {
       <TypingText
         lines={contentLines}
         onTypingFinished={() => setShowMessage(true)}
+        time={50}
       />
       <CommandLineInputNav showMessage={showMessage} isAutofocus={false} />
     </CommandLine>

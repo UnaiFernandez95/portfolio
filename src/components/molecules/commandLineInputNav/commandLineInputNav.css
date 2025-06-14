@@ -1,20 +1,21 @@
-.command-form .command-input{
-  display: flex;
-  flex-direction: row;
-}
-.command-separator{
+.command-line-form .command-line-form-separator{
   margin-bottom: 1rem;
   border-top: 2px solid #ccc;
 }
-.command-form .command-input p {
+.command-line-form .command-line-form-command-input{
+  display: flex;
+  flex-direction: row;
+  width:max-content;
+}
+.command-line-form .command-line-form-command-input p {
  color: var(--color-green);
 }
-.input-command {
+.command-line-form .command-line-form-command-input input {
   background:transparent;
   border: none;
   outline: none;
   color: transparent;
   caret-color: white;
   font-size: 1rem;
-  color:#b8b5b5
+  color:#b8b5b5;
 }
