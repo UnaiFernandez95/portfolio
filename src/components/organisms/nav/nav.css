@@ -1,7 +1,7 @@
 header {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content:space-evenly;
   gap:2rem;
   margin: 3rem 1rem;
   align-items:center;
@@ -41,10 +41,10 @@ nav ul li .link:hover {
   header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     gap:1rem;
     margin: 1rem 1rem;
-    justify-content:space-between;
+    justify-content:space-evenly;
+    width: 100%;
   }
 
   header img {

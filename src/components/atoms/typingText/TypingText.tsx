@@ -10,7 +10,7 @@ interface TypingTextProps {
 const TypingText = ({
   lines,
   onTypingFinished,
-  time = 100,
+  time = 10,
 }: TypingTextProps) => {
   const [currentLine, setCurrentLine] = useState(0);
   const [typedText, setTypedText] = useState("");
@@ -35,9 +35,9 @@ const TypingText = ({
           setCharIndex(0);
           setCurrentLine((prev) => prev + 1);
           setIsTyping(true);
-        }, time);
+        }, 100);
       }
-    }, 10);
+    }, time);
 
     return () =>{ clearInterval(interval)}
   }, [charIndex, currentLine, isTyping, lines]);

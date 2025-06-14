@@ -22,7 +22,7 @@ const CommandLineInputNav = ({ showMessage = true, isAutofocus = false }: Comman
     const input = command.trim().toLowerCase();
 
     switch (input) {
-      case "about me":
+      case "about":
         navigate("/about");
         break;
       case "skills":
@@ -36,7 +36,7 @@ const CommandLineInputNav = ({ showMessage = true, isAutofocus = false }: Comman
         break;
       default:
         alert(
-          "Unknown command. Try 'about me', 'skills', 'projects' or 'contact'."
+          "Unknown command. Try 'about', 'skills', 'projects' or 'contact'."
         );
     }
 
@@ -48,7 +48,7 @@ const CommandLineInputNav = ({ showMessage = true, isAutofocus = false }: Comman
         <>
           <hr className="command-line-form-separator" />
           <p>
-            {"-> "}Enter a command below, such as 'about me', 'skills',
+            {"-> "}Enter a command below, such as 'about', 'skills',
             'projects', or 'contact', to explore more about me.
           </p>
         </>

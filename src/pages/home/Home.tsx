@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./home.css";
-import TypingText from "../../components/molecules/typingText/TypingText";
+import TypingText from "../../components/atoms/typingText/TypingText";
 
 const Home = () => {
   const [command, setCommand] = useState("");
@@ -12,7 +12,7 @@ const Home = () => {
   const contentLines = [
     "I'm Unai Fernandez",
     "Welcome to my portfolio website.",
-    "Enter a command below, such as 'about me', 'skills', 'projects', or 'contact', to explore more about me.",
+    "Enter a command below, such as 'about', 'skills', 'projects', or 'contact', to explore more about me.",
   ];
   
   const [showMessage, setShowMessage] = useState(false);
@@ -27,7 +27,7 @@ const Home = () => {
     const input = command.trim().toLowerCase();
 
     switch (input) {
-      case "about me":
+      case "about":
         navigate("/about");
         break;
       case "skills":
@@ -41,7 +41,7 @@ const Home = () => {
         break;
       default:
         alert(
-          "Unknown command. Try 'about me', 'skills', 'projects' or 'contact'."
+          "Unknown command. Try 'about', 'skills', 'projects' or 'contact'."
         );
     }
 

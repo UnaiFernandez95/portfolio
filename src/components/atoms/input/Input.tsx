@@ -16,16 +16,16 @@ const Input = ({ placeholder, type, value, onChange, id, name, required, label, 
   return (
     <div className="input">
       {label && <label htmlFor={id}>{label}</label>}
-      <input
-        type={type}
-        placeholder={placeholder}
-        value={value}
-        onChange={onChange}
-        id={id}
-        name={name}
-        required={required}
-        maxLength={maxLength}
-      />
+        <input
+          type={type}
+          placeholder={placeholder}
+          value={value}
+          onChange={onChange}
+          id={id}
+          name={name}
+          required={required}
+          maxLength={maxLength}
+        />
     </div>
   );
 }

@@ -49,8 +49,6 @@ src/
 └── main.jsx
 ```
 
-## 🙋‍♂️ About Me
+## 🙋‍♂️ More Info About Me
 
-Made with ❤️ by Unai 
-
-Feel free to connect with me on [Linkedin](https://www.linkedin.com/in/unai-fernandez-arocena) or check out my [GitHub](https://github.com/UnaiFernandez95).
+Feel free to connect with me on [Linkedin](https://www.linkedin.com/in/unai-fernandez-arocena) or check out my [Portdolio](https://unaifernandez.tech).
