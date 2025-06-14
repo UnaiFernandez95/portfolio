@@ -1,37 +1,25 @@
-.contact-command-line{
+.contact-form{
   display: flex;
   flex-direction: column;
   gap: 1rem;
   color: var(--color-text);
 }
 
-.contact-command-line .contact-command-line-form{
+.contact-form .contact-form-form{
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.contact-command-line .contact-command-line-form .esential-info {
+.contact-form .contact-form-fields{
   display: flex;
   flex-direction: row;
   gap: 1rem;
-}
-
-.contact-command-line .contact-command-line-form .form-name{
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 30rem;
-}
-.contact-command-line .contact-command-line-form .form-phone{
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 30rem;
+  width: 100%;
 }
 
 
-.contact-command-line .contact-command-line-form textarea{
+.contact-form textarea{
   font-family: inherit;
   font-feature-settings: inherit;
   font-variation-settings: inherit;
@@ -46,3 +34,12 @@
 
 }
 
+
+@media (max-width: 768px) {
+  .contact-form .contact-form-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+}

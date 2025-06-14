@@ -12,7 +12,7 @@ const Nav = () => {
         <ul>
           <li>
             <Link className="link" to="/about">
-              About me
+              About
             </Link>
           </li>
           <li>
@@ -27,7 +27,7 @@ const Nav = () => {
           </li>
           <li>
             <Link className="link" to="/contact">
-              Contact me
+              Contact
             </Link>
           </li>
         </ul>

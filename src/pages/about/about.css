@@ -1,7 +1,5 @@
-.about-command-line {
+.about{
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  color: var(--color-text);
-}
-
+} 

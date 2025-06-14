@@ -1,28 +1,11 @@
-.home-command-line{
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.home-command-line h1 {
-  font-size: 2.5rem;
-  color: #b8b5b5;
-}
-
-.home-command-line h2 {
-  font-size: 2rem;
-  color: #b8b5b5;
-}
-
-.home-command-line .command-form{
+.home-command-form{
   display: flex;
   flex-direction: row;
 }
-
-.home-command-line .command-form p {
+.home-command-form p {
  color: var(--color-green);
 }
-.home-command-line .input-command {
+.home-command-form .home-command-form__input {
   background:transparent;
   border: none;
   outline: none;

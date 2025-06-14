@@ -1,4 +1,3 @@
-import CommandLine from "../../components/organisms/comandLine/CommandLine";
 import SkillsInfo from "../../data/skills.json";
 import "./skills.css";
 
@@ -28,7 +27,7 @@ const ICON_MAP: Record<string, string> = {
 
 const Skills = () => {
   return (
-    <CommandLine className="skills-command-line">
+    <article className="skills">
       <h2>Skills and Technologies I Work With 💻</h2>
       <h3>{SkillsInfo.EN.frontend.title}</h3>
       <p>{SkillsInfo.EN.frontend.description}</p>
@@ -48,7 +47,7 @@ const Skills = () => {
         })}
       </ul>
       <CommandLineInputNav isAutofocus={true} />
-    </CommandLine>
+    </article>
   );
 };
 

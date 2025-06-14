@@ -3,10 +3,9 @@ import "./commandLine.css";
 
 interface CommandLineProps {
   children?: ReactNode;
-  className?: string;
 }
 
-const CommandLine= ({ children, className }: CommandLineProps) => {
+const CommandLine= ({ children }: CommandLineProps) => {
   return (
     <>
       <div className="command-line">
@@ -19,7 +18,7 @@ const CommandLine= ({ children, className }: CommandLineProps) => {
           <div className="green-ellipse" />
         </div>
         <div
-          className={`${className} text-area`}
+          className="text-area"
         >
           {children ? children : <h2>Sorry, something is wrong.</h2>}
         </div>

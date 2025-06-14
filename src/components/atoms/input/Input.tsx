@@ -12,24 +12,21 @@ interface InputProps {
   maxLength?: number;
 }
 
-const Input = ({ placeholder, type, value, onChange, id, name, required, label, maxLength = 30 }: InputProps) => {
+const Input = ({ placeholder, type, value, onChange, id, name, required, label, maxLength = 50 }: InputProps) => {
   return (
-    <>
+    <div className="input">
       {label && <label htmlFor={id}>{label}</label>}
-      <div className="input-container">
-        <p>{"->"}</p>
-        <input
-          type={type}
-          placeholder={placeholder}
-          value={value}
-          onChange={onChange}
-          id={id}
-          name={name}
-          required={required}
-          maxLength={maxLength}
-        />
-      </div>
-    </>
+      <input
+        type={type}
+        placeholder={placeholder}
+        value={value}
+        onChange={onChange}
+        id={id}
+        name={name}
+        required={required}
+        maxLength={maxLength}
+      />
+    </div>
   );
 }
 

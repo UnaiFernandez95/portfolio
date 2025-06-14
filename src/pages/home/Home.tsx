@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import CommandLine from "../../components/organisms/comandLine/CommandLine";
 import { useNavigate } from "react-router-dom";
 import "./home.css";
 import TypingText from "../../components/molecules/typingText/TypingText";
@@ -50,9 +49,12 @@ const Home = () => {
   };
 
   return (
-    <CommandLine className="home-command-line">
-      <TypingText lines={contentLines} onTypingFinished={() => setShowMessage(true)} />
-      <form onSubmit={handleCommand} className="command-form">
+    <>
+      <TypingText
+        lines={contentLines}
+        onTypingFinished={() => setShowMessage(true)}
+      />
+      <form onSubmit={handleCommand} className="home-command-form">
         <div>{showMessage && <p>user ➜ ~ cd ./</p>}</div>
         <input
           ref={inputRef}
@@ -60,10 +62,10 @@ const Home = () => {
           value={command}
           maxLength={10}
           onChange={(e) => setCommand(e.target.value)}
-          className="input-command"
+          className="home-command-form__input"
         />
       </form>
-    </CommandLine>
+    </>
   );
 };
 
