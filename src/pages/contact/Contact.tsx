@@ -5,9 +5,6 @@ import Input from "../../components/atoms/input/Input";
 
 import "./contact.css";
 
-//TODO: improve CommandLine styles 
-//TODO: add form validation
-
 const Contact = () => {
   const [state, handleSubmit] = useForm("mgvyaron");
   if (state.succeeded) {
@@ -20,10 +17,11 @@ const Contact = () => {
     );
   }
   return (
-    <form onSubmit={handleSubmit} className="contact-form">
-      <h2>Feel free to connect with me 🙋‍♂️</h2>
+    <>
+      <form onSubmit={handleSubmit} className="contact-form">
+        <h2>Feel free to connect with me 🙋‍♂️</h2>
 
-      <div className="contact-form-fields">
+        <div className="contact-form-fields">
           <Input id="name" name="name" label="Name:" maxLength={50} required />
           <ValidationError prefix="Name" field="name" errors={state.errors} />
 
@@ -38,26 +36,30 @@ const Contact = () => {
             field="number"
             errors={state.errors}
           />
-      </div>
+        </div>
 
-      <Input
-        id="email"
-        type="email"
-        name="email"
-        label="Email address: "
-        maxLength={50}
-        required
-      />
-      <ValidationError prefix="Email" field="email" errors={state.errors} />
+        <Input
+          id="email"
+          type="email"
+          name="email"
+          label="Email address: "
+          maxLength={50}
+          required
+        />
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
 
-      <label htmlFor="email">Message:</label>
-      <textarea id="message" name="message" required />
-      <ValidationError prefix="Message" field="message" errors={state.errors} />
+        <label htmlFor="email">Message:</label>
+        <textarea id="message" name="message" required />
+        <ValidationError
+          prefix="Message"
+          field="message"
+          errors={state.errors}
+        />
 
-      <Button disabled={state.submitting}>Submit</Button>
-
-      <CommandLineInputNav />
-    </form>
+        <Button disabled={state.submitting}>Submit</Button>
+      </form>
+      <CommandLineInputNav showMessage={true} />
+    </>
   );
 }
 

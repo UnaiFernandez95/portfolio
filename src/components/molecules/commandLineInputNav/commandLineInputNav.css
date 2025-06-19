@@ -7,9 +7,21 @@
   flex-direction: row;
   width:max-content;
 }
-.command-line-form .command-line-form-command-input p {
+.command-line-form .command-line-form-command-input .command-line-form-command-input__p-1 {
  color: var(--color-green);
+ font-weight: bold;
+ margin-right: 0.5rem;
 }
+.command-line-form .command-line-form-command-input .command-line-form-command-input__p-2{
+ color: rgb(31, 86, 224);
+ font-weight: bold;
+  margin-right: 0.5rem;
+}
+.command-line-form .command-line-form-command-input .command-line-form-command-input__p-3{
+ color: var(--color-text);
+ font-weight: bold;
+}
+
 .command-line-form .command-line-form-command-input input {
   background:transparent;
   border: none;

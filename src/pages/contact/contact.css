@@ -20,18 +20,14 @@
 
 
 .contact-form textarea{
-  font-family: inherit;
-  font-feature-settings: inherit;
-  font-variation-settings: inherit;
-  font-size: 100%;
-  font-weight: inherit;
-  line-height: inherit;
   margin: 0;
   padding: 0.625rem;
   border-radius: 0.625rem;
-  min-height: 4rem;
-  background-color: var(--color-text);
-
+  min-height: 6rem;
+  background-color: #161616;
+  color: var(--color-text);
+  resize:vertical;
+  outline: none;
 }
 
 

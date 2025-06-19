@@ -43,30 +43,30 @@ const CommandLineInputNav = ({ showMessage = true, isAutofocus = false }: Comman
     setCommand("");
   };
   return (
-    <form onSubmit={handleCommand} className="command-line-form">
+    <>
       {showMessage ? (
-        <>
+        <form onSubmit={handleCommand} className="command-line-form">
           <hr className="command-line-form-separator" />
           <p>
-            {"-> "}Enter a command below, such as 'about', 'skills',
-            'projects', or 'contact', to explore more about me.
+            {"-> "}Enter a command below, such as 'about', 'skills', 'projects',
+            or 'contact', to explore more about me.
           </p>
-        </>
+          <div className="command-line-form-command-input">
+            <p className="command-line-form-command-input__p-1">{"user "}</p>
+            <p className="command-line-form-command-input__p-2">{" ➜ ~"}</p>
+            <p className="command-line-form-command-input__p-3">{"cd ./"}</p>
+            <input
+              ref={inputRef}
+              type="text"
+              value={command}
+              maxLength={10}
+              onChange={(e) => setCommand(e.target.value)}
+              className="input-command"
+            />
+          </div>
+        </form>
       ) : null}
-      {showMessage ? (
-        <div className="command-line-form-command-input">
-          <p>user ➜ ~ cd ./</p>
-          <input
-            ref={inputRef}
-            type="text"
-            value={command}
-            maxLength={10}
-            onChange={(e) => setCommand(e.target.value)}
-            className="input-command"
-          />
-        </div>
-      ) : null}
-    </form>
+    </>
   );
 };
 export default CommandLineInputNav;
