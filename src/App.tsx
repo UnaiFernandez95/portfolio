@@ -1,7 +1,7 @@
 import Nav from './components/organisms/nav/Nav';
 import AppRoutes from './components/Routes/Routes';
 import CommandLine from './components/organisms/comandLine/CommandLine';
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import "./styles/color.css"
 import "./styles/font.css";
